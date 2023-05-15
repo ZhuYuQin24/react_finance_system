@@ -12,7 +12,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vite/react_finance_system"],
+    "types": ["vite/react_client"],
 
     /* Linting */
     "strict": true,
