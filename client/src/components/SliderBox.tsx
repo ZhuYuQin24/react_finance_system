@@ -54,6 +54,7 @@ const SliderBox = (props: Props) => {
     (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
       setExpanded(newExpanded ? panel : false);
     };
+  //根据侧边栏路由导航生成
   return (
     <>
       <FlexAccordion>
