@@ -16,16 +16,16 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 type Props = {};
 const Navbar = (props: Props) => {
-  const { palette:{grey} } = useTheme();
+  const { palette} = useTheme();
   // 仪表盘数据
   const [selected, setSelected] = useState("dashboard");
   return (
-    <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={grey[500]}>
+    <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[500]}>
       {/* logo */}
       <FlexBetween gap="0.75rem">
         <BubbleChartIcon sx={{ fontSize: "28px" }} />
       </FlexBetween>
-      {/* 导航栏 */}
+      {/* 头部导航栏 */}
       <FlexBetween gap="0.75rem">
         <Stack direction="row" spacing={2}>
           <Avatar>
@@ -44,7 +44,9 @@ const Navbar = (props: Props) => {
             <Brightness7Icon sx={{ fontSize: "1rem" }} />
           </Avatar>
         </Stack>
+       
       </FlexBetween>
+
     </FlexBetween>
   );
 };
