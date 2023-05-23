@@ -1,7 +1,9 @@
 import React from "react";
 type Props = {};
 const Predictions = (props: Props) => {
-  return <div></div>;
+  return <div>
+    Predictions
+  </div>;
 };
 
 export default Predictions;
