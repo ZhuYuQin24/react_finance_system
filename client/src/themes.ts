@@ -103,9 +103,13 @@ export const themeSettings = {
     tertiary: {
       ...tokens.tertiary,
     },
-    grey: {
-      ...tokens.grey,
-      main: tokens.grey[500],
+    blue: {
+      ...tokens.blue,
+      main: tokens.blue[500],
+    },
+    green: {
+      ...tokens.green,
+      main: tokens.green[500],
     },
     background: {
       default: tokens.background.main,
