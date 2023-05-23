@@ -1,11 +1,12 @@
+import { Box, CssBaseline } from "@mui/material";
+//自定义组件
+import Navbar from "@/scenes/navbar";
+import Content from "@/scenes/content";
+
+//主题
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useMemo } from "react";
-import { themeSettings } from "./themes";
-import {Box,CssBaseline } from "@mui/material";
-import {  Routes,Route} from "react-router-dom";
-import Navbar from "@/scenes/navbar";
-import Dashboard from "@/scenes/dashboard";
-import Predictions from "@/scenes/predictions";
+import { themeSettings } from "@/themes";
 
 function App() {
   const theme = useMemo(() => createTheme(themeSettings), []);
@@ -13,12 +14,11 @@ function App() {
     <div className="app">
       <ThemeProvider theme={theme}>
         <CssBaseline>
-        <Box width="100%" height="100%" padding="1rem 2rem 4rem 2rem">
+          <Box width="100%" height="100%" padding="0.5rem 1rem">
+            {/* 头部导航栏 */}
             <Navbar />
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/predictions" element={<Predictions />} />
-            </Routes>
+            {/* 主内容 */}
+            <Content />
           </Box>
         </CssBaseline>
       </ThemeProvider>
