@@ -15,4 +15,4 @@ const Content = (props:Props) => {
   );
 };
 
-export default Routers;
+export default Content;
